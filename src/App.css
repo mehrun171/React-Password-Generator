@@ -1,38 +1,124 @@
-.App {
+body{
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.header{
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: underline;
+}
+
+h1{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App {
+  width: 50%;
+  height:50%;
+  margin: 0 auto 0;
+  padding: auto;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.wrapper{
+  height: 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+div#root {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.generator {
+  background-color: #0F307D;
+  height: 450px;
+  width: 450px;
+  margin:160px 150px;
+  display:inline-block;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  max-width: 100%;
+  padding: 40px;
+  border-radius: 10px;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .grlogbutton {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 50px;
+    border: 0px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #969292;
+    font-size: 20px;
+    font-weight: bolder;
   }
-}
+  
+  .generator-password{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  
+  button.copy-btn {
+    display: block;
+    padding: 0%;
+    margin: auto;
+    width: 45%;
+    height: 40px;
+    cursor: pointer;
+    border: 0px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #969292;
+  }
+  
+  .form-group input[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+    color: rgb(251, 247, 247);
+  }
+  
+  .form-group label {
+    font-weight: 600;
+    color: rgb(220, 218, 218);
+    font-size: 18px;
+    font-style: italic;
+  }
+  
+  input[type='number'] {
+    width: 60px;
+    height: 20px;
+  }
+  
+  h2{
+    color:aliceblue
+  }
+
+  h3{
+    color:black;
+    background-color: azure;
+    height:30px;
+  }
